@@ -36,6 +36,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <SnackbarProvider
+      maxSnack={3}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+    >
+      <RouterProvider router={router}></RouterProvider>
+    </SnackbarProvider>
   </StrictMode>
 );
