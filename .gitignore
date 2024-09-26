@@ -1,0 +1,10 @@
+node_modules
+config.js
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# React build
+build/
+dist/
