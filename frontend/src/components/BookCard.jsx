@@ -17,7 +17,7 @@ const BookCard = ({ book, openModel }) => {
       <p className="text-lg text-center mt-6">{book.author}</p>
       <p
         className="text-gray-600 text-sm
-      text-center mt-4 border 
+      text-center mt-4 border p-2 shadow-md shadow-red-300
       "
       >
         {book.publishYear}
@@ -27,14 +27,20 @@ const BookCard = ({ book, openModel }) => {
       justify-between items-center mt-24"
       >
         <Link to={`/books/details/${book._id}`}>
-          <BsInfo className="text-sky-500 text-3xl absolute left-4 bottom-4" />
+          <BsInfo
+            className="text-red-400 
+          hover:text-black
+          text-3xl absolute left-4 bottom-4"
+          />
         </Link>
 
         <BsEye
           onClick={() => {
             openModel();
           }}
-          className="text-sky-500 cursor-pointer text-3xl absolute right-4 bottom-4"
+          className="text-red-400 cursor-pointer
+          hover:text-black
+          text-3xl absolute right-4 bottom-4"
         />
       </div>
     </div>
