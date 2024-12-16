@@ -6,11 +6,8 @@ An online bookstore application built with **React**, **Express**, and **MongoDB
 
 ## Features 🚀
 
-- **User Authentication**: Sign up, log in, and manage profiles.
 - **Book Management**: Add, update, or delete books (Admin feature).
 - **Search and Filter**: Easily find books by title, author, or genre.
-- **Shopping Cart**: Add books to your cart and proceed to checkout.
-- **Order Management**: Track order history and statuses.
 - **Responsive Design**: Works seamlessly across devices.
 
 ---
